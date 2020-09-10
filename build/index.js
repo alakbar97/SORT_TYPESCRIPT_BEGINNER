@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var LinkedList_1 = require("./LinkedList");
+var CharactersCollection_1 = require("./CharactersCollection");
+var NumbersCollection_1 = require("./NumbersCollection");
+var numbersCollection = new NumbersCollection_1.NumbersCollection([10, 50, -3, 9]);
+var charactersCollection = new CharactersCollection_1.CharactersCollection("Alakbar");
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(245);
+linkedList.add(35);
+linkedList.add(-64);
+linkedList.add(41);
+numbersCollection.sort();
+charactersCollection.sort();
+linkedList.sort();
+console.log(numbersCollection.data);
+console.log(charactersCollection.data);
+console.log(linkedList);
